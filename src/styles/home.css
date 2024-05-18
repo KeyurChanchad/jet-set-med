@@ -1,0 +1,133 @@
+.bg-container {
+    position: relative;
+}
+
+.text-box {
+    top: 15rem;
+    left: 0;
+}
+
+.title-desc {
+    padding: 2rem 0;
+}
+
+.title-desc h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 3rem;
+    font-size: 3.5rem;
+    color: rgb(80, 80, 229);;
+}
+
+.title-desc p {
+    text-align: center;
+    color: rgb(80, 80, 229);;
+    font-size: 1.3rem;
+}
+
+.card-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+#img-1 {
+    top: 20px;
+    right: 150px;
+}
+
+#img-2 {
+    width: 300px;
+    bottom: 80px;
+    left: 0px;
+}
+
+#img-3 {
+    width: 300px;
+    bottom: 20px;
+    right: 0px;
+}
+
+.card-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.heading-1 {
+    font-size: 4rem;
+    padding: 3rem 0;
+    text-align: center;
+    color: rgb(80, 80, 229);
+}
+
+.card-container .card {
+    width: 32%;
+    height: 220px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container .card img {
+    width: 100%;
+    height: 75%;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-container .card p {
+    height: 25%;
+    background-color: rgb(80, 80, 229);
+    text-align: center;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscription-container .card{
+    width: 25%;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-container .card h4 {
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 19px;
+}
+
+.subscription-container .card p {
+    margin: 0;
+    margin-left: 19px;
+}
+
+.subscription-container .card  .price {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.ruppe {
+    font-size: 2rem;
+}
