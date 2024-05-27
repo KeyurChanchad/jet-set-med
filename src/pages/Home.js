@@ -15,11 +15,11 @@ const Home = () => {
         </video>
         <div className="w-100 position-absolute text-box d-flex justify-content-center align-item-center flex-column m-0">
           <div className="w-100 d-flex justify-content-center align-item-center">
-            <p className="b-font fw-medium text-center text-white w-75">
+            <p className="b-font fw-medium text-center text-white w-75 inria-serif-regular">
               Lorem nostrud sint est dolore elit culpa.
             </p>
           </div>
-          <p className="text-center text-white">
+          <p className="text-center text-white inria-serif-light">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
             culpa consectetur cupiditate voluptate aspernatur laboriosam.
           </p>
@@ -28,10 +28,10 @@ const Home = () => {
       <div style={{ background: "#e3eff3" }}>
         <div className="container-fluid w-75 ">
           <div className="title-desc">
-            <h1>
+            <h1 className="inria-serif-regular">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, et!
             </h1>
-            <p>
+            <p className="inria-serif-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
               placeat excepturi ab, laudantium, sequi earum consequuntur
               officiis maxime quae temporibus blanditiis itaque aspernatur
@@ -42,10 +42,10 @@ const Home = () => {
             </p>
           </div>
           <div className="title-desc">
-            <h1>
+            <h1 className="inria-serif-regular">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, et!
             </h1>
-            <p>
+            <p className="inria-serif-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
               placeat excepturi ab, laudantium, sequi earum consequuntur
               officiis maxime quae temporibus blanditiis itaque aspernatur
@@ -63,12 +63,12 @@ const Home = () => {
         </video>
         <div className="w-100 position-absolute text-box d-flex justify-content-center align-item-center flex-column m-0 z-3">
           <div className="w-100 d-flex justify-content-center align-item-center">
-            <p className="b-font fw-medium text-center text-white w-75">
+            <p className="b-font fw-medium text-center text-white w-75 inria-serif-bold">
               JetSetMed - Personalized Affordable Medical Kits
             </p>
           </div>
           <div className="align-self-center">
-            <button className="btn btn-primary rounded-pill px-5 py-2">
+            <button className="btn btn-primary rounded-pill px-5 py-2 inria-serif-light btn-text-color bgOrangeColor">
               {" "}
               Get Started{" "}
             </button>
@@ -126,7 +126,7 @@ const Home = () => {
       </div>
       <div style={{ background: "#e3eff3" }}>
         <div className="container-fluid">
-          <h1 className="heading-1">Make your trips hassel-free</h1>
+          <h1 className="heading-1 inria-serif-bold">Make your trips hassel-free</h1>
           <div className="subscription-container">
             <div className="card">
               <div className="title">
