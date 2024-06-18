@@ -33,7 +33,7 @@
   font-family: 'Bitter-Bold';
 }
 
-.row {
+.home-main {
   display: flex;
   justify-content: space-between;
   align-items: center;

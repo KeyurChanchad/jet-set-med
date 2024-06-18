@@ -1,0 +1,22 @@
+.sc-kdBRUi {
+  display: flex;
+}
+
+#img1 {
+  align-self: self-start;
+}
+#img2 {
+  align-self: center;
+}
+#img3 {
+  align-self: self-end;
+}
+
+#aspirinlogo {
+    width: 150px;
+    height: 150px;
+}
+
+.active {
+    background-color: #194176;
+}

@@ -1,0 +1,54 @@
+.heading-1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #194176;
+    font-weight: 700;
+    font-family: 'Bitter-ExtraBold';
+}
+
+.heading-desc {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #194176;
+    font-weight: 400;
+    font-family: 'Bitter-Regular';
+}
+
+.list-unstyled li {
+    padding: 10px 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.heading-3 {
+    font-size: 2rem;
+    color: #194176;
+    font-weight: 700;
+    font-family: 'Bitter-Bold';
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.price-card {
+    padding: 0 10px;
+}
+
+.price-card .bg-primary{
+    background-color: #194176;
+}
+
+.price-card .bg-outline{
+    color: #194176;
+    border: 1px solid #194176;
+}
+
+.small-light{
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Bitter-Thin';
+    text-align: center;
+}
+
+#c1 {
+    margin: 4.5rem 0;
+}

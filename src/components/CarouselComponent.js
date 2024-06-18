@@ -90,22 +90,22 @@ const CarouselComponent = () => {
 
   return (
     <div className="container mt-5 carousel-container">
-      <h2 className="text-center">What makes us different?</h2>
+      <h1 className="text-center">What makes us different?</h1>
       <p className="text-center desc">We'll pass that question to our users</p>
       <Carousel>
         {testimonialChunks.map((chunk, index) => (
           <Carousel.Item key={index}>
             <div className="d-flex justify-content-center">
               {chunk.map((testimonial, idx) => (
-                <div key={idx} className="card mx-2 rounded" style={{ width: '18rem' }}>
-                  <div className="card-heading">
+                <div key={idx} className="card mx-2 rounded" style={{ width: '18rem', height: 'auto' }}>
+                    <small className="travel-to">Travelled to: {testimonial.destination}</small>
+                  <div className="card-title-img">
                     <h5 className="card-title">{testimonial.name}</h5>
                     <img src={testimonial.image} className="card-img-top" alt={testimonial.name} />
                   </div>
                   <div className="card-body">
-                    <p className="card-text">{testimonial.testimonial}</p>
-                    <p className="card-text"><small className="text-muted">Member since: {testimonial.memberSince}</small></p>
-                    <p className="card-text"><small className="text-muted">Travelled to: {testimonial.destination}</small></p>
+                    <p className="card-text card-desc">{testimonial.testimonial}</p>
+                    <p className="card-text member-since rounded-bottom">Member since: {testimonial.memberSince}</p>
                   </div>
                 </div>
               ))}

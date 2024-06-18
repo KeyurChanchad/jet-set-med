@@ -7,6 +7,8 @@ import logo from '../assets/image/logo.png';
 import MedicalKitSection from '../components/MedicalKitSection';
 import TravelWithConfidence from '../components/TravelWithConfidence';
 import CarouselComponent from '../components/CarouselComponent';
+import HealthcareComparison from '../components/HealthcareComparison';
+import PlanComparison from '../components/PlanComparison';
 
 function HomePage() {
   return (
@@ -22,7 +24,7 @@ function HomePage() {
           </ul>
         </nav>
       </header>
-      <main className="row">
+      <main className="home-main">
         <div className="text-content">
           <h1>Travel Anywhere, Fearlessly</h1>
           <p>Expert-curated medical kits & 24/7 tele-health for worry-free adventures.</p>
@@ -43,6 +45,9 @@ function HomePage() {
       <MedicalKitSection />
       <TravelWithConfidence />
       <CarouselComponent />
+      <HealthcareComparison />
+      <MedicalKitSection />
+      <PlanComparison />
     </div>
   );
 }
