@@ -1,0 +1,21 @@
+.carousel-container {
+
+}
+
+.carousel-container h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #194176;
+    font-weight: 700;
+    font-family: "Bitter-ExtraBold";
+  }
+  
+  .carousel-container .desc {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #194176;
+    font-weight: 400;
+    font-family: "Bitter-Regular";
+    width: 75%;
+    margin: auto;
+  }

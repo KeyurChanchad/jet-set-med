@@ -1,0 +1,33 @@
+.medical-kit-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.medical-kit-section{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.medical-kit-section h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #194176;
+  font-weight: 700;
+  font-family: 'Bitter-ExtraBold';
+}
+
+.medical-kit-section p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #194176;
+  font-weight: 400;
+  font-family: 'Bitter-Regular';
+}
+
+.kit-image-container img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

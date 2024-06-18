@@ -1,0 +1,170 @@
+.main-content {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+.intro h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #194176;
+  font-weight: 700;
+  font-family: "Bitter-ExtraBold";
+}
+
+.intro p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #194176;
+  font-weight: 400;
+  font-family: "Bitter-Regular";
+  width: 75%;
+  margin: auto;
+}
+
+.features {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 2px solid #194176;
+  border-radius: 20px;
+}
+
+.feature {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.features img {
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #194176;
+  font-weight: 700;
+  font-family: "Bitter-ExtraBold";
+}
+
+.feature p {
+  color: #194176;
+  font-weight: 300;
+  font-family: "Bitter-Thin";
+  font-size: 1.2rem;
+}
+
+.how-we-do-it {
+  margin-top: 50px;
+}
+
+.how-we-do-it h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #194176;
+  font-weight: 700;
+  font-family: "Bitter-ExtraBold";
+}
+
+.how-we-do-it p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #194176;
+  font-weight: 400;
+  font-family: "Bitter-Regular";
+  width: 75%;
+  margin: auto;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+#step1 {
+  background-color: #194176;
+}
+#step2 {
+  background-color: orange;
+}
+#step3 {
+  background-color: #1941767e;
+}
+
+.step h3 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-family: 'Bitter-Bold';
+  font-weight: 600;
+}
+
+.step p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-family: 'Bitter-Regular';
+  font-weight: 300;
+}
+
+.step img {
+  width: 90%;
+  height: 15rem;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  background-color: green;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  border: 2px solid #194176;
+}
+
+.card-heading h5{
+  color: #194176;
+  font-size: 1.3rem;
+  font-family: 'Bitter-Bold';
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.card-img-top {
+  width: 50%;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features,
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
