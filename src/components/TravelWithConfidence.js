@@ -12,8 +12,8 @@ const TravelWithConfidence = () => {
     <div className="travelWithConDiv">
       <main className="main-content">
         <section className="intro">
-          <h1>Travel with Confidence</h1>
-          <p>Be prepared for anything. JetSetMed equips you with 15 tele-consultations across 5 key specialties, all within your reach, wherever you roam.</p>
+          <h1 className='heading-1'>Travel with Confidence</h1>
+          <p className='mb-4 heading-desc'>Be prepared for anything. JetSetMed equips you with 15 tele-consultations across 5 key specialties, all within your reach, wherever you roam.</p>
           <div className="features">
             <div className="feature">
               <img src={nurse} alt="nurse" />
@@ -33,8 +33,8 @@ const TravelWithConfidence = () => {
           </div>
         </section>
         <section className="how-we-do-it">
-          <h2>How we do it</h2>
-          <p>If you really think about it, it's almost like we're your guardian angel</p>
+          <h2 className='heading-1'>How we do it</h2>
+          <p className='heading-desc'>If you really think about it, it's almost like we're your guardian angel</p>
           <div className="steps">
             <div className="step" id='step1'>
               <h3>Taking a Risk Assessment</h3>

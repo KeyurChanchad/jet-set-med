@@ -11,24 +11,6 @@
   margin-bottom: 50px;
 }
 
-.intro h1 {
-  font-size: 3.5em;
-  margin-bottom: 20px;
-  color: #194176;
-  font-weight: 700;
-  font-family: "Bitter-ExtraBold";
-}
-
-.intro p {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-  color: #194176;
-  font-weight: 400;
-  font-family: "Bitter-Regular";
-  width: 75%;
-  margin: auto;
-}
-
 .features {
   margin: 2rem 0;
   display: flex;
@@ -70,7 +52,7 @@
   margin-top: 50px;
 }
 
-.how-we-do-it h2 {
+/* .how-we-do-it h2 {
   font-size: 3.5em;
   margin-bottom: 10px;
   color: #194176;
@@ -86,7 +68,7 @@
   font-family: "Bitter-Regular";
   width: 75%;
   margin: auto;
-}
+} */
 
 .steps {
   display: flex;
@@ -101,6 +83,9 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #step1 {
@@ -114,7 +99,7 @@
 }
 
 .step h3 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-bottom: 10px;
   color: #FFFFFF;
   font-family: 'Bitter-Bold';
@@ -132,6 +117,7 @@
 .step img {
   width: 90%;
   height: 15rem;
+  object-fit: contain;
 }
 
 .carousel-control-next, .carousel-control-prev{
@@ -166,5 +152,11 @@
   .steps {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 880px) {
+  .step h3 {
+    font-size: 2rem;
   }
 }

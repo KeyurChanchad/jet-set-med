@@ -1,17 +1,8 @@
-
-.carousel-container h1 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-    color: #194176;
-    font-weight: 700;
-    font-family: "Bitter-ExtraBold";
-  }
-
-  .card-title-img {
+.card-title-img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 55%;
+    min-height: 40%;
     border-top: 2px solid #194176;
     border-bottom: 2px solid #194176;
     margin: 0 3px;
@@ -26,16 +17,6 @@
     max-width: 50%;
     object-fit: cover;
     background-size: cover;
-  }
-  
-  .carousel-container .desc {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-    color: #194176;
-    font-weight: 400;
-    font-family: "Bitter-Regular";
-    width: 75%;
-    margin: auto;
   }
 
   .card-body {
@@ -60,15 +41,6 @@
     font-family: "Bitter-Regular";
     font-size: 0.8rem;
     padding: 2px 10px;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    top: 25rem;
-  }
-
-  .carousel-indicators .active {
-    background-color: #194176;
   }
 
   .travel-to {

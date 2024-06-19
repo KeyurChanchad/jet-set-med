@@ -15,6 +15,29 @@ code {
     monospace;
 }
 
-.bg-primary {
-  background-color: #194176;
+
+.heading-1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #194176;
+  font-weight: 700;
+  font-family: 'Bitter-ExtraBold';
+}
+
+.heading-desc {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #194176;
+  font-weight: 400;
+  font-family: 'Bitter-Regular';
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading-1 {
+    font-size: 2.5em;
+  }
+  .heading-desc {
+    font-size: 1.1rem;
+  }
 }

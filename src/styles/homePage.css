@@ -6,26 +6,30 @@
   align-items: center;
 }
 
-.navbar {
+.nav-header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   padding: 20px;
   background-color: #f8f8f8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .logo {
+.nav-header .logo {
   font-size: 1em;
   font-weight: bold;
+  width: 14rem;
+  height: 3rem;
+  margin-left: 1rem;
 }
 
-.navbar nav ul {
+.nav-header nav ul {
   display: flex;
-  list-style: none;
+  margin: 0;
 }
 
-.navbar nav ul li {
+.nav-header nav ul li {
   margin: 0 15px;
   cursor: pointer;
   color: #194176;
@@ -42,22 +46,6 @@
 
 .text-content {
   max-width: 50%;
-}
-
-.text-content h1 {
-  font-size: 3.5em;
-  margin-bottom: 20px;
-  color: #194176;
-  font-weight: 700;
-  font-family: 'Bitter-ExtraBold';
-}
-
-.text-content p {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-  color: #194176;
-  font-weight: 400;
-  font-family: 'Bitter-Regular';
 }
 
 .text-content button {
@@ -89,7 +77,8 @@
 }
 
 .telehealth-info ul {
-  list-style: circle;
+  list-style-type: disc;
+  margin-left: 1rem;
   padding: 5px 10px;
 }
 
@@ -98,4 +87,18 @@
   margin: 10px 0;
   color: #FFFFFF;
   font-family: 'Bitter-Thin';
+}
+
+@media (max-width: 776px){
+  .home-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  .text-content {
+    max-width: 100%;
+  }
+  .image-content {
+    max-width: 60%;
+  }
 }

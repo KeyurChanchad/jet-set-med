@@ -46,7 +46,7 @@ const PriceComparison = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  max-width: 50%;
+  max-width: 70%;
   margin: 20px 0;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -59,7 +59,7 @@ const PriceCard = styled.div`
   padding: 10px;
   border-radius: 8px;
   margin: 10px;
-  width: 12rem;
+  width: 15rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   @media (max-width: 768px) {
     margin: 5px 0;
@@ -112,7 +112,7 @@ const HealthcareComparison = () => {
       </AspirinIcon>
       <SubHeading>Aspirin</SubHeading>
       <PriceComparison>
-        <PriceCard className='active'>
+        <PriceCard className='price-card-active'>
           <div>JetSetMed</div>
           <Price>₹1</Price>
         </PriceCard>
