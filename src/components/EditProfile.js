@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import '../styles/editProfile.css';
+import { api } from '../utils/Rest-API';
 
 const EditProfile = () => {
   const [profile, setProfile] = useState({
@@ -14,22 +15,67 @@ const EditProfile = () => {
     country: 'India'
   });
 
+  useEffect(() => {
+    getProfileData();
+  
+    return () => {
+      
+    }
+  }, [])
+  
+  const getProfileData = async ()=> {
+    try {
+      const res = await api('/user', {}, 'get', true);
+      console.log("response of get user ", res.data);
+      if(res.data.success){
+        const data = res.data.data;
+        setProfile({
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email,
+          bloodGroup: '',
+          phoneNumber: data.phoneNumber,
+          institute: '',
+          city: '',
+          country: ''
+        })
+      }
+    } catch (error) {
+      console.log("error to get user profile ", error);
+    }
+  }
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProfile({ ...profile, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle form submission
     console.log(profile);
+    try {
+      const data = {
+        firstName: profile.firstName,
+        lastName: profile.lastName,
+        email: profile.email,
+        phoneNumber: profile.phoneNumber,
+      }
+      const res = await api('/user', data, 'put', true);
+      console.log("response of edit user ", res.data);
+      if(res.data.success){
+        alert('profile edited')
+      }
+    } catch (error) {
+      console.log("error to get user profile ", error);
+    }
   };
 
   return (
     <Container className="edit-profile-container">
       <h2>Edit Profile</h2>
       <Form onSubmit={handleSubmit}>
-        <Row>
+        <Row className="my-3">
           <Col md={6}>
             <Form.Group controlId="firstName">
               <Form.Label>First Name</Form.Label>
@@ -53,7 +99,7 @@ const EditProfile = () => {
             </Form.Group>
           </Col>
         </Row>
-        <Form.Group controlId="email">
+        <Form.Group controlId="email" className="my-3">
           <Form.Label>Email Address</Form.Label>
           <Form.Control
             type="email"
@@ -62,7 +108,7 @@ const EditProfile = () => {
             onChange={handleChange}
           />
         </Form.Group>
-        <Row>
+        <Row className="my-3">
           <Col md={6}>
             <Form.Group controlId="bloodGroup">
               <Form.Label>Blood Group</Form.Label>
@@ -86,7 +132,7 @@ const EditProfile = () => {
             </Form.Group>
           </Col>
         </Row>
-        <Form.Group controlId="institute">
+        <Form.Group controlId="institute" className="my-3">
           <Form.Label>Institute Address</Form.Label>
           <Form.Control
             type="text"
@@ -95,7 +141,7 @@ const EditProfile = () => {
             onChange={handleChange}
           />
         </Form.Group>
-        <Row>
+        <Row className="my-3">
           <Col md={6}>
             <Form.Group controlId="city">
               <Form.Label>City</Form.Label>

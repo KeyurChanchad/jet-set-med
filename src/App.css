@@ -81,6 +81,7 @@ main {
 .content-container {
   flex-grow: 1;
   padding: 20px;
+  width: 100vw;
 }
 
 .login-container,

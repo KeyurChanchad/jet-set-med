@@ -9,6 +9,7 @@ const Sidebar = () => {
         <h3>JetSetMed</h3>
       </div>
       <nav className="sidebar-nav">
+        <NavLink to="/" activeClassName="active-link">Home</NavLink>
         <NavLink to="/dashboard" activeClassName="active-link">Dashboard</NavLink>
         <NavLink to="/appointment-history" activeClassName="active-link">Appointment History</NavLink>
         <NavLink to="/medical-reports" activeClassName="active-link">Medical Reports</NavLink>

@@ -16,14 +16,21 @@ function HomePage() {
     <div className="homepage">
       <header className="nav-header">
         <img src={logo} className="logo" alt='logo' />
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Medical Kit</li>
-            <li>Pricing</li>
-          </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/edit-profile">EditProfile</a>
+        </li>
+      </ul>
+    </div>
+</nav>
       </header>
       <main className="home-main">
         <div className="text-content">
