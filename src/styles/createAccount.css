@@ -1,0 +1,34 @@
+.btn  {
+    border: none;
+    margin: 0 5px;
+}
+
+.btn img {
+   width: 3rem;
+   height: 3rem;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label{
+    font-weight: 400;
+    font-family: 'Bitter-Medium';
+    font-size: 1.2rem;
+}
+
+.btn-sumbmit {
+    display: flex;
+    background-color:#194176;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+}
+
+.btn-sumbmit:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #194176;
+    color: #194176;
+}

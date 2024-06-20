@@ -8,14 +8,87 @@ body, html, #root {
   text-align: center;
 }
 
+.app-container {
+  display: flex;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.notification-profile {
+  display: flex;
+  align-items: center;
+}
+
+.notification-profile i {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.profile-edit {
+  display: flex;
+  align-items: center;
+}
+
+.profile-edit img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-edit span {
+  font-size: 1rem;
+}
+
+main {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+}
+
+/* App.css */
+.public-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  width: 100vw;
+}
+
+.private-layout {
+  display: flex;
+}
+
+.content-container {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.login-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
 }
