@@ -1,0 +1,21 @@
+.user-profile-img {
+  width: 40px;
+  height: 40px;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Bitter-Bold";
+}
+
+.dashboard-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Bitter-Bold";
+}
+
+.v-hr {
+  border-left: 2px solid;
+  padding-left: 10px;
+}

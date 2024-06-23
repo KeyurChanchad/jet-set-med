@@ -1,19 +1,39 @@
 .edit-profile-container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  form {
-    width: 100%;
-  }
-  
-  button {
-    margin-top: 20px;
-  }
-  
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  width: 70%;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.dashboard-heading {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Bitter-Bold";
+}
+
+.input-icon {
+  height: 100%;
+  background: none;
+  border-right: none;
+}
+
+.profile-pic-div {
+  width: 30%
+}
+
+.primary-bg {
+  background-color: #194176;
+}

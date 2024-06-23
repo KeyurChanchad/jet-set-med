@@ -135,7 +135,7 @@ const Home = () => {
               </div>
               <div className="price">
                 <span>
-                  <span class="material-symbols-outlined">currency_rupee</span>0
+                  <span className="material-symbols-outlined">currency_rupee</span>0
                 </span>
               </div>
               <button className="btn rounded-pill px-5 py-2">Get Started</button>
@@ -158,7 +158,7 @@ const Home = () => {
               </div>
               <div className="price">
                 <span>
-                  <span class="material-symbols-outlined">currency_rupee</span>0
+                  <span className="material-symbols-outlined">currency_rupee</span>0
                 </span>
               </div>
               <button className="btn btn-primary rounded-pill px-5 py-2">Get Started</button>
@@ -180,7 +180,7 @@ const Home = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <div className="price">
-                <span class="material-symbols-outlined">currency_rupee</span>{" "}
+                <span className="material-symbols-outlined">currency_rupee</span>{" "}
                 <span className="ruppe">0</span>
               </div>
               <button className="btn btn-primary rounded-pill px-5 py-2">Get Started</button>

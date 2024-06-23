@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import axios from "axios";
 import doctorVector from "../assets/image/doctor-vector.png";
 import googleLogo from "../assets/image/google-color.png";
 import metaLogo from "../assets/image/meta-color.png";
@@ -19,6 +18,7 @@ const Login = () => {
 
   const [errors, setErrors] = useState({});
   const [apiError, setApiError] = useState("");
+  const [alertData, setAlertData] = useState({ showAlert: false, title: '', message: '', type: '' }); 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -43,23 +43,52 @@ const Login = () => {
         const response = await api("/auth/login", formData, "post", false);
         console.log("Response of login ", response.data);
         if(response.data.success){
+          setApiError("");
           localStorage.setItem('token', response.data.token);
+          setAlertData({ showAlert: true, title: 'Success', message: 'Login successfully', type: 'success' });
           setFormData({
             email: "",
             password: "",
-          })
-          navigate('/');
+          });
+          setTimeout(() => {
+            setAlertData({ showAlert: false, title: '', message: '', type: '' });
+            navigate('/dashboard');
+        }, 3000);
+        }else {
+          setApiError("Failed to login. Please try again.");
+          console.log("Error to login ", response.data.message);
+          setAlertData({ showAlert: true, title: 'Error', message: response.data.message, type: 'danger' });
+          setTimeout(() => {
+            setAlertData({ showAlert: false, title: '', message: '', type: '' });
+        }, 3000);
         }
         // Handle successful account creation
       } catch (error) {
         setApiError("Failed to login. Please try again.");
         console.log("Error to login ", error);
+        setAlertData({ showAlert: true, title: 'Error', message: error, type: 'danger' });
+        setTimeout(() => {
+          setAlertData({ showAlert: false, title: '', message: '', type: '' });
+      }, 3000);
       }
     }
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
+    {
+      alertData.showAlert && (
+          <div className={`alert alert-${alertData.type} alert-dismissible fade show`} role="alert"> 
+              <strong>{alertData.title}</strong> {alertData.message}
+              <button
+              type="button"
+              className="btn-close m-0"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+              ></button>
+          </div>
+      )
+    }
       <div className="row vh-100">
         <div className="col-md-6 d-flex align-items-center justify-content-center">
           <img
@@ -70,7 +99,7 @@ const Login = () => {
         </div>
         <div className="col-md-6 d-flex align-items-center justify-content-center">
           <div className="w-75">
-            <h1 className="mb-1 text-center">Welcome Back!</h1>
+            <h2 className="mb-1 mt-3 text-center">Welcome Back!</h2>
             <p className="m-0 mb-3 text-center">Sign in with:</p>
             <div className="mb-3 text-center">
               <button className="btn btn-outline-secondary mr-2 btn-image">
@@ -112,14 +141,14 @@ const Login = () => {
                 )}
               </div>
               <div className="form-group d-flex justify-content-between">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="flexCheckDisabled"
                   />
-                  <label class="form-check-label" for="flexCheckDisabled">
+                  <label className="form-check-label" for="flexCheckDisabled">
                     Remember me
                   </label>
                 </div>
@@ -139,7 +168,7 @@ const Login = () => {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-arrow-right mx-1"
+                    className="bi bi-arrow-right mx-1"
                     viewBox="0 0 16 16"
                   >
                     <path

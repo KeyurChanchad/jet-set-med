@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import axios from "axios";
 import doctorVector from "../assets/image/doctor-vector.png";
 import successIcon from "../assets/image/icon-park_success.png";
 import "../styles/createAccount.css";
@@ -9,8 +8,11 @@ import { useNavigate } from 'react-router-dom';
 const SuccessPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate = ()=> {
-    navigate('/dashboard')
+  const handleNavigate = async ()=> {
+    console.log('Navigate to dashboard');
+    setTimeout(() => {
+      navigate('/dashboard');
+    }, 2000);
   }
   return (
     <div className="container-fluid">
@@ -37,7 +39,7 @@ const SuccessPage = () => {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-arrow-right mx-1"
+                    className="bi bi-arrow-right mx-1"
                     viewBox="0 0 16 16"
                   >
                     <path
