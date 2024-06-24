@@ -4,6 +4,7 @@ import doctorVector from "../assets/image/doctor-vector.png";
 import "../styles/createAccount.css";
 import { api } from "../utils/Rest-API";
 import { useNavigate } from "react-router-dom";
+import { ArrowRight } from "react-bootstrap-icons";
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
@@ -85,7 +86,7 @@ const ForgotPassword = () => {
         <div className="col-md-6 d-flex align-items-center justify-content-center">
           <div className="w-75">
             <h2 className="mb-5 text-center">Forgot Your Password?</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='w-100'>
               <div className="form-group">
                 <label>Enter your email</label>
                 <input
@@ -93,6 +94,7 @@ const ForgotPassword = () => {
                   className="form-control"
                   name="email"
                   value={email}
+                  placeholder="Enter your registered email"
                   onChange={handleInputChange}
                 />
                 {error.email && (
@@ -104,19 +106,7 @@ const ForgotPassword = () => {
               <div className="row">
                 <button type="submit" className="btn btn-sumbmit btn-block">
                   <strong className="mx-2">Verify Email</strong>{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-arrow-right mx-1"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                    />
-                  </svg>
+                  <ArrowRight />
                 </button>
               </div>
             </form>

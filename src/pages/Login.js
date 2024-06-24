@@ -7,6 +7,7 @@ import facebookLogo from "../assets/image/facebook-color.png";
 import "../styles/createAccount.css";
 import { api } from "../utils/Rest-API";
 import { useNavigate } from 'react-router-dom';
+import { ArrowRight } from "react-bootstrap-icons";
 
 
 const Login = () => {
@@ -113,7 +114,7 @@ const Login = () => {
               </button>
             </div>
             <p className="text-center">or</p>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="w-100">
               <div className="form-group">
                 <label>Email Address</label>
                 <input
@@ -140,8 +141,8 @@ const Login = () => {
                   <small className="text-danger">{errors.password}</small>
                 )}
               </div>
-              <div className="form-group d-flex justify-content-between">
-                <div className="form-check">
+              <div className="form-group d-flex justify-content-between row">
+                <div className="form-check col-sm-12 col-md-6">
                   <input
                     className="form-check-input"
                     type="checkbox"
@@ -152,30 +153,18 @@ const Login = () => {
                     Remember me
                   </label>
                 </div>
-                <p className="primary-text">
+                <div className="primary-text col-sm-12 col-md-6">
                   <a href="/forgotPassword" className="primary-text b-font">
                     Forgot Your Password
                   </a>
-                </p>
+                </div>
               </div>
 
               {apiError && <p className="text-danger">{apiError}</p>}
               <div className="row">
                 <button type="submit" className="btn btn-sumbmit btn-block">
                   <strong className="mx-2">Next</strong>{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-arrow-right mx-1"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                    />
-                  </svg>
+                  <ArrowRight />
                 </button>
               </div>
             </form>

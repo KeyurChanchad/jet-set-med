@@ -19,11 +19,11 @@ import PrivateRoute from './components/PrivateRoute';
 import history from './navigation';
 import PublicLayout from './components/PublicLayout';
 import PrivateLayout from './components/PrivateLayout';
-import Dashboard from './pages/Dashboard';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import MedicalReports from './components/MedicalReports';
 import AppointmentHistory from './components/AppointmentHistory';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const isAuthenticated = !!localStorage.getItem('token');

@@ -1,0 +1,53 @@
+.wising-dashboard {
+    background-color: #5989AD;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.wising-dashboard h2{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Bitter-Bold';
+    color: #FFFFFF;
+}
+
+.dashaboard-card-profile-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Bitter-Bold';
+    margin: 0 0 10px 0;
+}
+
+.dashaboard-card-icon {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Bitter-Bold';
+    margin: 0;
+}
+
+.appointment-dashboard {
+    margin-top: 30%;
+}
+
+.our-services-dashboard {
+    padding: 12px 16px;
+    border-radius: 20px;
+    background-color: rgba(25, 65, 118, 1);
+}
+
+.appointment-dashboard-card {
+    background-color: #E38C3B78;
+    height: 15rem;
+    border: 2px dashed #E38C3B;
+    border-radius: 20px;
+}
+
+.appointment-dashboard-card h5{
+    font-size: 1.3rem;
+    font-family: 'Bitter-Bold';
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0;
+}

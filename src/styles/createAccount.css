@@ -32,3 +32,11 @@
     border: 1px solid #194176;
     color: #194176;
 }
+
+.img-fluid {
+    padding: 20px;
+}
+
+@media screen and (max-width: 410px) {
+    
+}

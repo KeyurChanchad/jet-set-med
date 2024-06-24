@@ -9,6 +9,7 @@ import facebookLogo from "../assets/image/facebook-color.png";
 import "../styles/createAccount.css";
 import { api } from "../utils/Rest-API";
 import CountryPicker from "../components/CountryPicker";
+import { ArrowRight } from "react-bootstrap-icons";
 
 const CreateAccount = () => {
   const navigate = useNavigate();
@@ -150,7 +151,7 @@ const CreateAccount = () => {
               </button>
             </div>
             <p className="text-center">or</p>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="w-100">
               <div className="row">
                 <div className="col">
                   <div className="form-group">
@@ -243,19 +244,7 @@ const CreateAccount = () => {
               <div className="row">
                 <button type="submit" className="btn btn-sumbmit btn-block">
                   <strong className="mx-2">Next</strong>{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-arrow-right mx-1"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                    />
-                  </svg>
+                  <ArrowRight />
                 </button>
               </div>
             </form>
