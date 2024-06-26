@@ -81,7 +81,7 @@ function HomePage() {
       <MedicalKitSection />
       <TravelWithConfidence />
       <HowWeDoIt />
-      
+      <CarouselComponent />
       <HealthcareComparison />
       <MedicalKitSection />
       <PlanComparison />
