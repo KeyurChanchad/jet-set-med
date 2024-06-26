@@ -146,6 +146,14 @@
     flex-direction: column;
     align-items: center;
   }
+
+    .feature:not(:last-child)::after {
+      display: none;
+    }
+
+    #step2 {
+      margin: 10px;
+    }
 }
 
 @media (max-width: 880px) {

@@ -6,72 +6,6 @@ import aspirinImg from '../assets/image/aspirin.png';
 import '../styles/healthCareComponent.css';
 
 
-// const Heading = styled.h1`
-//   font-family: 'Bitter-ExtraBold';
-//   font-weight: '800';
-//   margin: 20px 0;
-//   color: #194176;
-//   font-size: 4rem;
-//   @media (max-width: 768px) {
-//     font-size: 18px;
-//   }
-// `;
-
-// const SubHeading = styled.h3`
-//   color: #194176;
-//   font-family: 'Bitter-Bold';
-//   margin: 10px 0;
-//   font-size: 2rem;
-//   @media (max-width: 768px) {
-//     font-size: 16px;
-//   }
-// `;
-
-// const Description = styled.p`
-//   font-size: 1rem;
-//   color: #194176;
-// `;
-
-// const PriceComparison = styled.div`
-//   display: flex;
-//   justify-content: space-around;
-//   width: 100%;
-//   max-width: 70%;
-//   margin: 20px 0;
-//   @media (max-width: 768px) {
-//     flex-direction: column;
-//     align-items: center;
-//   }
-// `;
-
-// const PriceCard = styled.div`
-//   background: #f8f8f8;
-//   padding: 10px;
-//   border-radius: 8px;
-//   margin: 10px;
-//   width: 15rem;
-//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-//   @media (max-width: 768px) {
-//     margin: 5px 0;
-//   }
-// `;
-
-// const Price = styled.div`
-//   font-size: 24px;
-//   font-weight: bold;
-//   margin-top: 5px;
-//   @media (max-width: 768px) {
-//     font-size: 20px;
-//   }
-// `;
-
-
-// const AspirinIcon = styled.div`
-//   width: 100%;
-//   margin: 10px 0;
-// `;
-
-
 const HealthcareComparison = () => {
   return (
     <Container className='helthcare-container'>
@@ -94,7 +28,7 @@ const HealthcareComparison = () => {
                 </Col>
             </Row>
             <Row className="text-center">
-                <Col md={3}>
+                <Col sm={6} md={3} xs={12}>
                     <Card className="aspirin-card active-aspirin-card">
                         <Card.Body>
                             <Card.Title className="aspirin-card-title"> JetSetMed</Card.Title>
@@ -102,7 +36,7 @@ const HealthcareComparison = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col sm={6} md={3} xs={12}>
                     <Card className="aspirin-card">
                         <Card.Body>
                             <Card.Title className="aspirin-card-title"> USA</Card.Title>
@@ -110,7 +44,7 @@ const HealthcareComparison = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col sm={6} md={3} xs={12}>
                     <Card className="aspirin-card">
                         <Card.Body>
                             <Card.Title className="aspirin-card-title"> UK</Card.Title>
@@ -118,7 +52,7 @@ const HealthcareComparison = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col sm={6} md={3} xs={12}>
                     <Card className="aspirin-card">
                         <Card.Body>
                             <Card.Title className="aspirin-card-title"> Australia</Card.Title>

@@ -29,9 +29,9 @@ const PlanComparison = () => {
         <div className="col-md-4">
           <div className="card">
             <div className="card-body price-card">
-              <h5 className="card-title heading-3">JetSetMed Prime Kit</h5>
-              <h6 className="heading-3">₹11,999</h6>
-              <button className="btn btn-primary btn-block mb-3 fill">Choose This Plan</button>
+              <h5 className="card-title plan-heading-3">JetSetMed Prime Kit</h5>
+              <h6 className="plan-heading-3">₹11,999</h6>
+              <button className="btn btn-primary btn-block mb-3 fill w-100 m-auto">Choose This Plan</button>
               <ul className="list-unstyled">
                 <li>Premium 50+ OTC, presentation and trauman drugs</li>
                 <li><img src={yesIcon} alt='yesicon' /></li>
@@ -50,9 +50,9 @@ const PlanComparison = () => {
         <div className="col-md-4">
           <div className="card">
             <div className="card-body price-card">
-              <h5 className="card-title heading-3">JetSetMed Home Kit</h5>
-              <h6 className="heading-3">₹2,999</h6>
-              <button className="btn btn-outline-primary btn-block mb-3 outline">Choose This Plan</button>
+              <h5 className="card-title plan-heading-3">JetSetMed Home Kit</h5>
+              <h6 className="plan-heading-3">₹2,999</h6>
+              <button className="btn btn-outline-primary btn-block mb-3 outline w-100 m-auto">Choose This Plan</button>
               <ul className="list-unstyled">
                 <li><p>Basic</p> <small>Kit Only Over the container drugs and Trauma Kit </small></li>
                 <li></li>

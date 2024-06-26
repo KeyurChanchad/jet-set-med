@@ -57,12 +57,12 @@ const membersOnlyServices = [
 const ServiceCard = ({ title, description, icon }) => (
   <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
     <div className="card h-100 text-center">
-      <div className="card-body">
+      <div className="service-card-body">
         <div className="service-card-icon">
           <img src={icon} className="service-card-icon" width={80} height={80} alt='global-search'/>
         </div>
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
+        <h5 className="service-card-title">{title}</h5>
+        <p className="service-card-text">{description}</p>
         <span  className='red-dot'></span>
       </div>
     </div>

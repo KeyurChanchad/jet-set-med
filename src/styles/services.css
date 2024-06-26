@@ -5,13 +5,13 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
   
-  .card-body {
+  .service-card-body {
     display: flex;
     flex-direction: column;
     padding: 16px;
   }
   
-  .card-title {
+  .service-card-title {
     text-align: left;
     margin-top: 1rem;
     font-size: 1.6rem;
@@ -20,7 +20,7 @@
     font-weight: '600';
   }
   
-  .card-text {
+  .service-card-text {
     font-size: 1.1rem;
     font-family: 'Bitter-Medium';
     color: #6c757d;

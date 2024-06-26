@@ -63,7 +63,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer-heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .btn-orange { 
         padding: 10px;
