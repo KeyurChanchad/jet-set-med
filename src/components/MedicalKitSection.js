@@ -4,7 +4,7 @@ import medicalKit from '../assets/image/medicalKit.png';
 
 const MedicalKitSection = () => {
   return (
-    <div className="medical-kit-section">
+    <div className="medical-kit-section h-100">
       <h1 className='heading-1'>Explore Our Medical Kit</h1>
       <p className='heading-desc'>Stranded on a deserted island? Don’t fear our med kit is here</p>
       <div className="kit-image-container">

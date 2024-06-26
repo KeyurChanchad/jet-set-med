@@ -1,0 +1,21 @@
+.travel-assessment-container{
+    background-color: #ACD2D2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.travel-assessment-heading {
+    color: #FFFFFF;
+    font: optional;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Bitter-Bold';
+    text-align: center;
+    margin: 0;
+}
+
+.aggrement-text{
+    font-size: 1.5rem;
+    font-family: 'Bitter-Midum';
+    font-weight: 500;
+}
