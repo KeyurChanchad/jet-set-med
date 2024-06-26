@@ -11,7 +11,9 @@ const Footer = () => {
     <div className="footer-container">
       <div className="content">
         <div>
-            <h1 className='footer-heading'>JetSetMed Where health meets adventure! </h1>
+            <h1 className='footer-heading'>JetSetMed </h1>
+            <h1 className='footer-heading'>Where health meets</h1>
+            <h1 className='footer-heading'> adventure! </h1>
             <button className='btn-orange'>Join our community today</button>
         </div>
             <div className="footer-image-container">

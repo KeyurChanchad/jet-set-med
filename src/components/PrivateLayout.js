@@ -8,7 +8,7 @@ const PrivateLayout = ({ name, children }) => {
     <div className="private-layout">
       <Sidebar />
       <div className="content-container">
-        <div className="row shadow-sm p-2 mb-4 bg-body rounded">
+        <div className="row shadow-sm p-2 mb-3 bg-body rounded">
           <div className="col-9">
             <h4 className="m-0 pt-1 dashboard-heading">{name}</h4>
           </div>

@@ -15,7 +15,7 @@ const HowWeDoIt = () => {
             angel
           </p>
           <div className="steps row">
-            <div className="step col-sm-12 col-md-4" id="step1">
+            <div className="step col-sm-12 col-md-3" id="step1">
               <h3>Taking a Risk Assessment</h3>
               <p>
                 Before your trip, you'll fill out a pre-trip risk assessment
@@ -23,7 +23,7 @@ const HowWeDoIt = () => {
               </p>
               <img src={meter} alt="meter" />
             </div>
-            <div className="step col-sm-12 col-md-4" id="step2">
+            <div className="step col-sm-12 col-md-3" id="step2">
               <h3>Pre-travel Consultation</h3>
               <p>
                 Pre-trip consultation with healthcare professionals to identify
@@ -32,7 +32,7 @@ const HowWeDoIt = () => {
               </p>
               <img src={meeting} alt="meeting" />
             </div>
-            <div className="step col-sm-12 col-md-4" id="step3">
+            <div className="step col-sm-12 col-md-3" id="step3">
               <h3>Expert Advice from Doctors</h3>
               <p>
                 When unwell, schedule an appointment with our doctors. Our

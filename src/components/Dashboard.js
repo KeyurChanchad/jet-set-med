@@ -13,7 +13,7 @@ const Dashboard = () => {
             <h2>We hope you are doing well</h2>
           </div>
           <div className="appointment-dashboard">
-            <h2 className="text-center">Appointment</h2>
+            <h3 className="heading-3 text-dark text-start">Appointment</h3>
             <div className="d-flex flex-column align-items-center justify-content-center appointment-dashboard-card rounded ">
                 <Plus size={40} color="white"/>
                 <h5>Book an appointment</h5>
@@ -21,13 +21,13 @@ const Dashboard = () => {
           </div>
         </Col>
         <Col md={4}>
-          <Card className="shadow p-3 mb-5 bg-body rounded border-0">
+          <Card className="shadow p-3 mb-3 bg-body rounded border-0">
             <div className="d-flex align-items-center">
               <img
                 src={require("../assets/image/user.png")}
                 alt="user-profile-img"
-                width={100}
-                height={100}
+                width={60}
+                height={60}
                 className="border border-secondary rounded user-profile-img"
               />
               <div className="ms-3">
@@ -38,24 +38,24 @@ const Dashboard = () => {
             <hr />
             <div className="d-flex align-items-center flex-column">
                 <Row className="w-100">
-                    <Col><Envelope className="dashaboard-card-icon" /></Col>
-                    <Col className="dashaboard-card-profile-text">abc.Gmail.com</Col>
+                    <Col sm={2} md={2}><Envelope className="dashaboard-card-icon" /></Col>
+                    <Col sm={8} md={8} className="dashaboard-card-profile-text">abc.Gmail.com</Col>
                 </Row>
                 <Row className="w-100">
-                    <Col><Cake className="dashaboard-card-icon" /></Col>
-                    <Col className="dashaboard-card-profile-text">xx/xx/xxxx</Col>
+                    <Col sm={2} md={2}><Cake className="dashaboard-card-icon" /></Col>
+                    <Col sm={8} md={8} className="dashaboard-card-profile-text">xx/xx/xxxx</Col>
                 </Row>
                 <Row className="w-100">
-                    <Col><Droplet className="dashaboard-card-icon" /></Col>
-                    <Col className="dashaboard-card-profile-text">B+ve</Col>
+                    <Col sm={2} md={2}><Droplet className="dashaboard-card-icon" /></Col>
+                    <Col sm={8} md={8} className="dashaboard-card-profile-text">B+ve</Col>
                 </Row>
                 <Row className="w-100">
-                    <Col><House className="dashaboard-card-icon" /></Col>
-                    <Col className="dashaboard-card-profile-text">Banglore, india</Col>
+                    <Col sm={2} md={2}><House className="dashaboard-card-icon" /></Col>
+                    <Col sm={8} md={8} className="dashaboard-card-profile-text">Banglore, india</Col>
                 </Row>
                 <Row className="w-100">
-                    <Col><Telephone className="dashaboard-card-icon" /></Col>
-                    <Col className="dashaboard-card-profile-text">+91 xxxxxxxxxx</Col>
+                    <Col sm={2} md={2}><Telephone className="dashaboard-card-icon" /></Col>
+                    <Col sm={8} md={8} className="dashaboard-card-profile-text">+91 xxxxxxxxxx</Col>
                 </Row>
             </div>
           </Card>

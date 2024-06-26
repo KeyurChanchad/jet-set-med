@@ -1,5 +1,4 @@
 .travelWithConDiv {
-  height: 100vh;
   width: 100%;
 }
 
@@ -68,11 +67,12 @@
 
 .steps {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .step {
-  padding: 20px;
+  padding: 40px;
   border: 1px solid #ccc;
   border-radius: 20px;
   display: flex;

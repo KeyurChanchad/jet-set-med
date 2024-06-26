@@ -1,15 +1,17 @@
-.sc-kdBRUi {
-  display: flex;
-}
 
 #img1 {
   align-self: self-start;
+  max-width: 20%;
+  height: auto;
 }
+
 #img2 {
   align-self: center;
 }
 #img3 {
   align-self: self-end;
+  max-width: 20%;
+  height: auto;
 }
 
 #aspirinlogo {
@@ -19,4 +21,59 @@
 
 .activprice-card-activee {
     background-color: #194176;
+}
+
+.helthcare-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+
+.aspirin-card {
+  border: 3px solid #194176 !important;
+}
+
+.aspirin-card-title {
+  color: #194176;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: 'Bitter-Bold';
+}
+
+.aspirin-card-desc{
+  color: #194176 !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  font-family: 'Bitter-Bold' !important;
+}
+
+.active-aspirin-card {
+  background-color: #194176 !important;
+  color: #FFFFFF !important;
+}
+
+.active-aspirin-card .card-body .aspirin-card-title, .active-aspirin-card .card-body .aspirin-card-desc{
+  color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+  .helthcare-container {
+    padding: 10px;
+  }
+  .img-container {
+    padding: 10px;
+  }
 }

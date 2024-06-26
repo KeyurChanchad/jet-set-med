@@ -5,6 +5,10 @@
     font-weight: 600;
 }
 
+.right-text li {
+    text-align: left;
+}
+
 .heading-3 {
     font-size: 2rem;
     color: #194176;

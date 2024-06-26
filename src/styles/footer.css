@@ -5,13 +5,13 @@
 
 .footer-heading {
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
     font-family: 'Bitter-Bold';
 }
 .footer-image-container {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
 }
 
 .footer-image-container img {
@@ -28,12 +28,12 @@
 }
 
 .btn-orange {
-    background-color: #ff9900;
+    background-color: #E38C3B;
     color: white;
     padding: 15px 30px;
     border: none;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2rem;
     border-radius: 5px;
     font-family: 'Bitter-Medium';
 }
@@ -45,6 +45,7 @@
 }
 
 .social-media {
+    margin-right: 2rem;
     float: right;
     background-color: #FFFFFF;
 }

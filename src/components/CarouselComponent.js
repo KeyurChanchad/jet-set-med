@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/carouselComponent.css';
 import userImg from "../assets/image/user.png";
 
+const screenWidth = window.screen.width;
+
 const CarouselComponent = () => {
   const testimonials = [
     {
@@ -86,10 +88,10 @@ const CarouselComponent = () => {
     return chunkedArr;
   };
 
-  const testimonialChunks = chunkArray(testimonials, 4); // Adjust the number to show more/less items per slide
+  const testimonialChunks = chunkArray(testimonials, 2); // Adjust the number to show more/less items per slide
 
   return (
-    <div className="container mt-5 carousel-container">
+    <div className="container-fluid mt-5 carousel-container">
       <h1 className="text-center heading-1">What makes us different?</h1>
       <p className="text-center desc mb-4 heading-desc">We'll pass that question to our users</p>
       <Carousel>
@@ -97,15 +99,15 @@ const CarouselComponent = () => {
           <Carousel.Item key={index}>
             <div className="d-flex justify-content-center">
               {chunk.map((testimonial, idx) => (
-                <div key={idx} className="card mx-2 rounded" style={{ width: '18rem', height: '23rem' }}>
+                <div key={idx} className="card mx-2 rounded student" style={{ width: screenWidth > 768 ? '18rem' : '18rem', height: '35rem' }}>
                     <small className="travel-to">Travelled to: {testimonial.destination}</small>
-                  <div className="card-title-img">
-                    <h5 className="card-title">{testimonial.name}</h5>
+                  <div className="student-card-title-img">
+                    <h5 className="student-card-title">{testimonial.name}</h5>
                     <img src={testimonial.image} className="card-img-top" alt={testimonial.name} />
                   </div>
-                  <div className="card-body">
-                    <p className="card-text card-desc">{testimonial.testimonial}</p>
-                    <p className="card-text member-since rounded-bottom">Member since: {testimonial.memberSince}</p>
+                  <div className="student-card-body">
+                    <p className="student-card-text student-card-desc">{testimonial.testimonial}</p>
+                    <p className="student-card-text member-since rounded-bottom">Member since: {testimonial.memberSince}</p>
                   </div>
                 </div>
               ))}

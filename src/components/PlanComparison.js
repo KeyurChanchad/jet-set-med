@@ -16,7 +16,7 @@ const PlanComparison = () => {
             <h5>Compare plans</h5>
             <p className="small-light">Explore our comparison to find the right kit that fits your needs.</p>
           </div>
-          <ul className="list-unstyled">
+          <ul className="list-unstyled right-text">
             <li><strong>Medical Kit</strong></li>
             <li><p className='p-0 m-0'>"The Help Me Handbook"</p> <small>Your on-the-go guide with vital contact information, system recognition and actionalble remedies</small></li>
             <li>Telemedical Services</li>

@@ -1,8 +1,7 @@
 .wising-dashboard {
     background-color: #5989AD;
-    padding: 8px 16px;
+    padding: 16px;
     border-radius: 20px;
-    width: 80%;
 }
 
 .wising-dashboard h2{
@@ -14,21 +13,21 @@
 }
 
 .dashaboard-card-profile-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family: 'Bitter-Bold';
     margin: 0 0 10px 0;
 }
 
 .dashaboard-card-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     font-family: 'Bitter-Bold';
     margin: 0;
 }
 
 .appointment-dashboard {
-    margin-top: 30%;
+    margin-top: 5vh;
 }
 
 .our-services-dashboard {
@@ -39,7 +38,7 @@
 
 .appointment-dashboard-card {
     background-color: #E38C3B78;
-    height: 15rem;
+    height: 50vh;
     border: 2px dashed #E38C3B;
     border-radius: 20px;
 }
