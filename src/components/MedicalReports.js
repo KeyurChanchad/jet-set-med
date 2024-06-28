@@ -67,7 +67,7 @@ function MedicalReports() {
       {/* Cards */}
       <Row>
         {[...Array(9)].map((_, index) => (
-          <Col md={4} xs={1} sm={2} key={index} className="mb-3">
+          <Col lg={4} md={3} xs={1} sm={1} key={index} className="mb-3">
             <Card style={{ minHeight: "200px" }}>
               <Card.Body>
                 <Card.Title>

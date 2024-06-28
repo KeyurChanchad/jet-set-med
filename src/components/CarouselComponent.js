@@ -88,7 +88,20 @@ const CarouselComponent = () => {
     return chunkedArr;
   };
 
-  const testimonialChunks = chunkArray(testimonials, 2); // Adjust the number to show more/less items per slide
+  let number;
+  if(screenWidth >= 1200)
+     number = 5;
+  else if(screenWidth >= 992 && screenWidth < 1200)
+    number = 4;
+  else if( screenWidth >= 768 && screenWidth < 992)
+    number = 3;
+  else if(screenWidth >= 576 && screenWidth < 768)
+    number = 2;
+  else 
+    number = 1;
+
+  console.log(screenWidth, number);
+  const testimonialChunks = chunkArray(testimonials, number); // Adjust the number to show more/less items per slide
 
   return (
     <div className="container-fluid mt-5 carousel-container">
@@ -99,7 +112,7 @@ const CarouselComponent = () => {
           <Carousel.Item key={index}>
             <div className="d-flex justify-content-center">
               {chunk.map((testimonial, idx) => (
-                <div key={idx} className="card mx-2 rounded student" style={{ width: screenWidth > 768 ? '18rem' : '18rem', height: '35rem' }}>
+                <div key={idx} className="card mx-2 rounded student" style={{ width: (screenWidth / number) - (number * 5), height: '35rem' }}>
                     <small className="travel-to">Travelled to: {testimonial.destination}</small>
                   <div className="student-card-title-img">
                     <h5 className="student-card-title">{testimonial.name}</h5>

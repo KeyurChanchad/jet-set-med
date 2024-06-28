@@ -1,4 +1,4 @@
-.sidebar {
+  .sidebar {
     width: 250px;
     background-color: #003366;
     color: white;
@@ -36,10 +36,10 @@
   
   @media (max-width: 768px) {
     .sidebar {
-      width: 100%;
+      width: 30%;
       height: auto;
-      flex-direction: row;
-      flex-wrap: wrap;
+      /* flex-direction: row;
+      flex-wrap: wrap; */
     }
   
     .sidebar-header {

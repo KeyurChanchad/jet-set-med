@@ -28,16 +28,16 @@
   border-right: 2px solid #194176;
 }
 
-.feature:not(:last-child)::after {
+.feature::after {
   content: "";
   position: absolute;
   top: 0;
   right: -10px; 
-  width: 1px;
-  height: 70%;
-  background-color: #194176;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border: 1px solid #194176;
+}
+
+.feature:last-child::after {
+  border: none;
 }
 
 .features img {
