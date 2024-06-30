@@ -31,7 +31,7 @@ const AppointmentHistory = () => {
       {/* Cards */}
       <Row>
         {[...Array(9)].map((_, index) => (
-          <Col md={6} key={index} className="mb-3">
+          <Col xxl={4} lg={4} md={6} sm={12} key={index} className="mb-3">
             <Card>
               <Card.Body>
                 <Card.Title>

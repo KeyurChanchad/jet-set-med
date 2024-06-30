@@ -91,14 +91,14 @@ const Login = () => {
       )
     }
       <div className="row vh-100">
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
+        <div className="col-md-12 col-lg-6 d-flex align-items-center justify-content-center">
           <img
             src={doctorVector}
             alt="Medical Illustration"
             className="img-fluid"
           />
         </div>
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
+        <div className="col-md-12 col-lg-6 d-flex align-items-center justify-content-center">
           <div className="w-75">
             <h2 className="mb-1 mt-3 text-center">Welcome Back!</h2>
             <p className="m-0 mb-3 text-center">Sign in with:</p>
@@ -142,7 +142,7 @@ const Login = () => {
                 )}
               </div>
               <div className="form-group d-flex justify-content-between row">
-                <div className="form-check col-sm-12 col-md-6">
+                <div className="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <input
                     className="form-check-input"
                     type="checkbox"
@@ -153,7 +153,7 @@ const Login = () => {
                     Remember me
                   </label>
                 </div>
-                <div className="primary-text col-sm-12 col-md-6">
+                <div className="primary-text col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <a href="/forgotPassword" className="primary-text b-font">
                     Forgot Your Password
                   </a>

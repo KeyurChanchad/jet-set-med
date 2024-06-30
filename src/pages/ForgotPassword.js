@@ -76,14 +76,14 @@ const ForgotPassword = () => {
         )
       }
       <div className="row vh-100">
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
+        <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
           <img
             src={doctorVector}
             alt="Medical Illustration"
             className="img-fluid"
           />
         </div>
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
+        <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
           <div className="w-75">
             <h2 className="mb-5 text-center">Forgot Your Password?</h2>
             <form onSubmit={handleSubmit} className='w-100'>

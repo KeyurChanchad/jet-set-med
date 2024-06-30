@@ -17,3 +17,9 @@
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 576px) {
+  .kit-image-container img {
+    height: 50vh;
+  }
+}

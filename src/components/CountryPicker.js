@@ -6,7 +6,7 @@ import 'react-phone-input-2/lib/style.css'
 const CountryPicker = ({ selectedCountry, setSelectedCountry }) => {
   return (
         <PhoneInput
-        inputStyle={{ width: '70%'}}
+        inputStyle={{ width: '100%'}}
         containerStyle={{ width: '100%'}}
         country={'in'}
         value={selectedCountry}

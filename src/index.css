@@ -44,11 +44,20 @@ code {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 769px) {
   .heading-1 {
     font-size: 2.5em;
   }
   .heading-desc {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-1 {
+    font-size: 1rem;
+  }
+  .heading-desc {
+    font-size: 0.5rem;
   }
 }

@@ -44,6 +44,7 @@
 
 .aspirin-card {
   border: 3px solid #194176 !important;
+  height: 90px !important;
 }
 
 .aspirin-card-title {
@@ -55,7 +56,7 @@
 
 .aspirin-card-desc {
   color: #194176 !important;
-  font-size: 2rem ;
+  font-size: 1.6rem ;
   font-weight: 700 !important;
   font-family: "Bitter-Bold" !important;
 }
@@ -68,9 +69,50 @@
 .active-aspirin-card .card-body .aspirin-card-title,
 .active-aspirin-card .card-body .aspirin-card-desc {
   color: #ffffff !important;
+  padding: 0 !important;
 }
 
-@media (max-width: 768px) {
+#carouselHelthcareAutoplaying .carousel-inner .carousel-control-next .carousel-control-next-icon, 
+#carouselHelthcareAutoplaying .carousel-inner .carousel-control-prev .carousel-control-prev-icon{
+  color: red;
+}
+
+@media screen and (max-width: 576px) {  
+  #img1 {
+    min-width: 40%;
+  }
+  #img3 {
+    min-width: 40%;
+  }
+  .aspirin-img-fluid {
+    width: 35%;
+    height: 80%;
+  }
+  .aspirin-card{
+    margin: 10px 0;
+    width: 150px;
+  }
+  .aspirin-card .card-body{
+     padding: 5px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .aspirin-card-title {
+    font-size: 0.8rem ;
+  }
+  .aspirin-card-desc {
+    font-size: 1rem ;
+  }
+  #img1 {
+    min-width: 20%;
+  }
+  #img3 {
+    min-width: 20%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 769px) {
   .helthcare-container {
     padding: 10px;
   }
@@ -79,9 +121,16 @@
   }
   .aspirin-card{
     margin: 10px 0;
+    width: 150px;
   }
   .card-title {
     font-size: 1.5rem;
+  }
+  #img1 {
+    min-width: 40%;
+  }
+  #img3 {
+    min-width: 40%;
   }
 }
 

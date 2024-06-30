@@ -34,15 +34,9 @@
     font-weight: bold;
   }
   
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 30%;
-      height: auto;
-      /* flex-direction: row;
-      flex-wrap: wrap; */
-    }
+  @media (min-width: 577px) and (max-width: 769px) {
   
-    .sidebar-header {
+    /* .sidebar-header {
       width: 100%;
     }
   
@@ -50,5 +44,21 @@
       flex: 1 1 auto;
       text-align: center;
       padding: 10px 0;
-    }
+    } */
+  }
+
+  .sidebar-btn {
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: #194176;
+  }
+
+  .sidebar-btn:hover {
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: #002244;
+  }
+
+  @media screen and (max-width: 576px) {
+    
   }

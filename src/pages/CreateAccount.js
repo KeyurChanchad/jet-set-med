@@ -128,14 +128,14 @@ const CreateAccount = () => {
         </div>
       )}
       <div className="row vh-100">
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
+        <div className="col-lg-6 col-md-12  d-flex align-items-center justify-content-center">
           <img
             src={doctorVector}
             alt="Medical Illustration"
             className="img-fluid"
           />
         </div>
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
+        <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
           <div className="w-75">
             <h2 className="mb-1 text-center mt-3">Create an Account</h2>
             <p className="m-0 mb-3 text-center">Sign up with:</p>
@@ -153,7 +153,7 @@ const CreateAccount = () => {
             <p className="text-center">or</p>
             <form onSubmit={handleSubmit} className="w-100">
               <div className="row">
-                <div className="col">
+                <div className="col-sm-12 col-md-6 col-lg-6">
                   <div className="form-group">
                     <label>First Name</label>
                     <input
@@ -168,7 +168,7 @@ const CreateAccount = () => {
                     )}
                   </div>
                 </div>
-                <div className="col">
+                <div className="col-sm-12 col-md-6 col-lg-6">
                   <div className="form-group">
                     <label>Last Name</label>
                     <input
@@ -212,7 +212,7 @@ const CreateAccount = () => {
                 )}
               </div>
               <div className="row">
-                <div className="col-4">
+                <div className="col-md-4">
                   <div className="form-group">
                     <label>Country</label>
                     <CountryPicker
@@ -221,7 +221,7 @@ const CreateAccount = () => {
                     />
                   </div>
                 </div>
-                <div className="col">
+                <div className="col-md-8">
                   <div className="form-group">
                     <label>Phone Number</label>
                     <input
@@ -250,7 +250,7 @@ const CreateAccount = () => {
             </form>
             <p className="mt-3 text-center primary-text">
               Already have an account?{" "}
-              <a href="/signin" className="primary-text b-font">
+              <a href="/login" className="primary-text b-font">
                 Sign In
               </a>
             </p>

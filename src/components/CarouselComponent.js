@@ -107,7 +107,7 @@ const CarouselComponent = () => {
     <div className="container-fluid mt-5 carousel-container">
       <h1 className="text-center heading-1">What makes us different?</h1>
       <p className="text-center desc mb-4 heading-desc">We'll pass that question to our users</p>
-      <Carousel>
+      <Carousel className='carousel-student'>
         {testimonialChunks.map((chunk, index) => (
           <Carousel.Item key={index}>
             <div className="d-flex justify-content-center">

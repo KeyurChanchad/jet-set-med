@@ -11,9 +11,10 @@ const PlanComparison = () => {
         Discover the ideal plan to fuel your business growth. Our pricing options are carefully crafted to cater to businesses.
       </p>
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 card">
+          <div className="card-body">
           <div id='c1'>
-            <h5>Compare plans</h5>
+            <h5 className="card-title b-font">Compare plans</h5>
             <p className="small-light">Explore our comparison to find the right kit that fits your needs.</p>
           </div>
           <ul className="list-unstyled right-text">
@@ -25,6 +26,7 @@ const PlanComparison = () => {
             <li>High-quality products and services</li>
             <li>Ideal for</li>
           </ul>
+          </div>
         </div>
         <div className="col-md-4">
           <div className="card">

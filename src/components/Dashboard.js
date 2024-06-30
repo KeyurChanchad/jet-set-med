@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <Container>
       <Row>
-        <Col md={8}>
+        <Col lg={8} md={12}>
           <div className="wising-dashboard">
             <h2>Good Morning Keyur!</h2>
             <h2>We hope you are doing well</h2>
@@ -20,7 +20,7 @@ const Dashboard = () => {
             </div>
           </div>
         </Col>
-        <Col md={4}>
+        <Col lg={4} md={12}>
           <Card className="shadow p-3 mb-3 bg-body rounded border-0">
             <div className="d-flex align-items-center">
               <img

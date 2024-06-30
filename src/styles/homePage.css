@@ -91,7 +91,44 @@
   font-family: 'Bitter-Thin';
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px) {
+  .nav-header .logo {
+    display: none;
+  }
+  .nav-header nav ul {
+    display: none;
+  }
+  .home-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .text-content {
+    max-width: 100%;
+  }
+  .image-content {
+    max-width: 80%;
+  }
+  .heading-1 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  .heading-desc {
+    font-size: 0.9rem;
+  }
+  .heading-3 { 
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .telehealth-info {
+    height: 9rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 769px) {
+  .logo {
+    display: none;
+  }
   .home-main {
     flex-direction: column;
     align-items: center;
@@ -108,5 +145,24 @@
   }
   .heading-desc {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-header .logo {
+    display: none;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .navbar-nav .nav-item li {
+    font-size: 1.8rem;
+  }
+  .telehealth-info {
+    height: 9rem;
   }
 }
