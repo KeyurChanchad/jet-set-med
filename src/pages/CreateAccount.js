@@ -241,7 +241,7 @@ const CreateAccount = () => {
               </div>
 
               {apiError && <p className="text-danger">{apiError}</p>}
-              <div className="row">
+              <div className="row" style={{   width: '98%'}}>
                 <button type="submit" className="btn btn-sumbmit btn-block">
                   <strong className="mx-2">Next</strong>{" "}
                   <ArrowRight />

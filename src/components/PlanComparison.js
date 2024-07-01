@@ -5,12 +5,12 @@ import yesIcon from '../assets/image/yes.png';
 
 const PlanComparison = () => {
   return (
-    <div className="container my-5">
+    <div className="container-fluid my-5">
       <h2 className="text-center heading-1">Find Your Perfect Plan</h2>
       <p className="text-center w-75 m-auto heading-desc">
         Discover the ideal plan to fuel your business growth. Our pricing options are carefully crafted to cater to businesses.
       </p>
-      <div className="row">
+      <div className="row w-100">
         <div className="col-md-4 card">
           <div className="card-body">
           <div id='c1'>

@@ -8,7 +8,7 @@ import travelAbroad from '../assets/image/travel-abroad.png';
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div className="container-fluid footer-container">
       <div className="content">
         <div className='footer-div'>
             <h1 className='footer-heading'>JetSetMed Where health meets adventure! </h1>

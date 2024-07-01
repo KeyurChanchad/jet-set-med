@@ -90,11 +90,11 @@ const CarouselComponent = () => {
 
   let number;
   if(screenWidth >= 1200)
-     number = 5;
+     number = 4;
   else if(screenWidth >= 992 && screenWidth < 1200)
     number = 4;
   else if( screenWidth >= 768 && screenWidth < 992)
-    number = 3;
+    number = 2;
   else if(screenWidth >= 576 && screenWidth < 768)
     number = 2;
   else 
@@ -112,7 +112,7 @@ const CarouselComponent = () => {
           <Carousel.Item key={index}>
             <div className="d-flex justify-content-center">
               {chunk.map((testimonial, idx) => (
-                <div key={idx} className="card mx-2 rounded student" style={{ width: (screenWidth / number) - (number * 5), height: '35rem' }}>
+                <div key={idx} className="card mx-2 rounded student" style={{ width: (screenWidth / number) - (number * 8), height: '35rem' }}>
                     <small className="travel-to">Travelled to: {testimonial.destination}</small>
                   <div className="student-card-title-img">
                     <h5 className="student-card-title">{testimonial.name}</h5>

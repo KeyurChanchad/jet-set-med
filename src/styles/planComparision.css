@@ -35,11 +35,10 @@
     font-size: 1rem;
     font-weight: 200;
     font-family: 'Bitter-Thin';
-    text-align: center;
 }
 
 #c1 {
-    margin: 4.5rem 0;
+    margin: 2.5rem 0;
 }
 
 @media (max-width: 990px){
